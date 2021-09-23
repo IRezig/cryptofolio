@@ -28,8 +28,9 @@ a:hover{
 }
 
 .main{
+  margin-left: 260px;
   flex: 0.8;
-  width: 100%;
+  width: 82%;
   
 }
 .routes{
