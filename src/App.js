@@ -1,17 +1,18 @@
 import React from 'react'
 import { Switch, Route, Link } from 'react-router-dom'
 import { Layout, Typography, Space } from 'antd'
-
+import { Navbar } from './components'
+import './App.css'
 
 export default function App() {
   return (
     <div className='App'>
-      <div className=''>
-
+      <div className='navbar'>
+        <Navbar />
       </div>
-      <div className='Main'>
+      <div className='main'>
       </div>
-      <div className='Footer'>
+      <div className='footer'>
       </div>
     </div>
   )
