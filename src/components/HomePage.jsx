@@ -2,9 +2,14 @@ import React from 'react'
 import millify from 'millify'
 import { Typography, Col, Row, Statistic } from 'antd'
 import { Link } from 'react-router-dom'
+import { useGetCryptosQuery } from '../services/cryptoApi';
 
-export default function HomePage() {
-  const { Title } = Typography
+const { Title } = Typography
+const HomePage = () => {
+  
+  const { data, isFetching } = useGetCryptosQuery(10);
+  console.log(data)
+
   return (
     <>
       <Title level={2} className='heading' >Global Cryptos State</Title>
@@ -18,3 +23,5 @@ export default function HomePage() {
     </>
   )
 }
+
+export default HomePage;
