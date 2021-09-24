@@ -105,9 +105,13 @@ a:hover{
 
   .main{
       flex: 1;
-      margin-top: 90px;
       margin-left: 0px;
       margin-right: 10px;
+      width: 100%;
+  }
+
+  .routes {
+    margin-top: 90px;
   }
 
   .nav-container{
