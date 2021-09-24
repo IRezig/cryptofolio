@@ -20,8 +20,7 @@ export default function App() {
       </div>
       <div className='footer'>
         <Typography.Title level={5} style={{color: 'white', textAlign: 'center'}}>
-          Cryptoverse, <br />
-          All right reserverd
+          Cryptofolio<br />
         </Typography.Title>
         <Space>
           <Link to='/'>Home</Link>

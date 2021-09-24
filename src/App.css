@@ -28,15 +28,15 @@ a:hover{
 }
 
 .main{
-  margin-left: 260px;
+  margin-left: 18%;
   flex: 0.8;
   width: 82%;
-  
 }
 .routes{
   padding: 20px;
 }
 .nav-container{
+  width: 18%;
   position: fixed;
   left: 0;
   margin: 10px;
@@ -53,7 +53,7 @@ a:hover{
   width: 100%;
 }
 .logo{
-  margin:0 0 0 15px;
+  margin: 10px 0 0 15px;
 }
 .logo a{
  color: white;
@@ -130,7 +130,7 @@ a:hover{
       font-size: 1.4rem !important;
   }
   .show-more{
-      font-size: 1.3rem !important;
+      font-size: 1.1rem !important;
   }
 }
 
