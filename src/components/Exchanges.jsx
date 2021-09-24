@@ -6,7 +6,7 @@ import { useGetExchangesQuery } from '../services/cryptoApi'
 import Loading from './Loading'
 export default function Exchanges() {
 
-  const { Text, Title } = Typography;
+  const { Text } = Typography;
   const { Panel } = Collapse;
   const { data, isFetching } = useGetExchangesQuery();
 
