@@ -3,6 +3,7 @@ import moment from 'moment'
 import { Col, Row, Select, Typography, Avatar, Card } from 'antd'
 import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi'
 import { useGetCryptosQuery } from '../services/cryptoApi';
+import Loading from './Loading';
 
 const demoImage = 'https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News';
 const { Text, Title } = Typography;
@@ -14,7 +15,7 @@ export default function News({simplified}) {
   const { data } = useGetCryptosQuery(100);
 
   const { data: cryptoNews } = useGetCryptoNewsQuery({newsCategory, count: simplified ? 6 : 12});
-  if(!cryptoNews?.value) return 'Loading...'
+  if(!cryptoNews?.value) return <Loading />
 
 
   return (

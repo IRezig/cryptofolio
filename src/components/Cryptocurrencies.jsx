@@ -3,6 +3,7 @@ import millify from 'millify'
 import { Link } from "react-router-dom"
 import { Card, Col, Row, Input } from "antd"
 import { useGetCryptosQuery } from '../services/cryptoApi';
+import Loading from './Loading';
 
 export default function Cryptocurrencies({ simplified }) {
 
@@ -19,7 +20,7 @@ export default function Cryptocurrencies({ simplified }) {
     setCryptos(filteredData);
   }, [cryptosList, searchTerm]);
   
-  if(isFetching) return 'Loading...'
+  if(isFetching) return <Loading />
   
 
   return (
