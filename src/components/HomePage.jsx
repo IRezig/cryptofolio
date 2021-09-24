@@ -12,8 +12,6 @@ const HomePage = () => {
   const globalStats = data?.data?.stats 
   if(isFetching) return 'Loading...'
 
-  console.log(data)
-
   return (
     <>
       <Title level={2} className='heading' >Global Cryptos State</Title>

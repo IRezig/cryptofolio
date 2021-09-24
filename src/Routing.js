@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Route, Link } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import { Homepage, Exchanges, News, CryptoDetails, Cryptocurrencies  } from './components'
 
 export default function Routing() {
@@ -14,7 +14,7 @@ export default function Routing() {
       <Route exact path='/cryptocurrencies'>
         <Cryptocurrencies />
       </Route>
-      <Route exact path='/crypto/:coinID'>
+      <Route exact path='/crypto/:coinId'>
         <CryptoDetails />
       </Route>
       <Route exact path='/news'>

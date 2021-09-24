@@ -19,8 +19,6 @@ export default function Cryptocurrencies({ simplified }) {
     setCryptos(filteredData);
   }, [cryptosList, searchTerm]);
   
-  console.log(cryptosList)
-  // const globalStats = data?.data?.stats 
   if(isFetching) return 'Loading...'
   
 
