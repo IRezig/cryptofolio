@@ -4,6 +4,7 @@
 
 ![Crypto-folio] (https://i.postimg.cc/vHgSvMmx/Screenshot-2021-09-26-at-17-14-02.png)
 
+![Screenshot 2021-09-26 at 17 31 23](https://user-images.githubusercontent.com/31003809/134814324-7bf16bf1-cdcf-442a-85c6-906bf2b6379b.png)
 
 
 ## Description of the project:
