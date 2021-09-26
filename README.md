@@ -1,4 +1,4 @@
-# Crypto currency tracker
+# Cryptocurrency Tracker
 
 ### [live site ] :https://dreamy-sammet-a8cb0c.netlify.app/
 
@@ -7,8 +7,9 @@
 
 
 ## Description of the project:
-This project is one of my school project (Epitech 2020)
- 
+This project is one of my school project (Epitech 2020) where I used
+- Coinranking to get data about all coins, markets and exchanges.
+- Bing News Search send a search query to Bing and get back a list of news about cryptos
 
 
 Setup
