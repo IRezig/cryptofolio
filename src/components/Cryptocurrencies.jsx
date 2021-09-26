@@ -7,7 +7,7 @@ import Loading from './Loading';
 
 export default function Cryptocurrencies({ simplified }) {
 
-  const count = simplified ? 10 : 100
+  const count = simplified ? 8 : 100
   const { data: cryptosList, isFetching } = useGetCryptosQuery(count);
   const [cryptos, setCryptos] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
@@ -21,7 +21,6 @@ export default function Cryptocurrencies({ simplified }) {
   }, [cryptosList, searchTerm]);
   
   if(isFetching) return <Loading />
-  
 
   return (
     <>
@@ -37,7 +36,7 @@ export default function Cryptocurrencies({ simplified }) {
         {cryptos?.map((currency) => (
           <Col xs={24} sm={12} lg={6} className="crypto-card" key={currency.id} >
             <Link to={`/crypto/${currency.id}`}>
-              <Card 
+              <Card
                 title={`${currency.rank}. ${currency.name}`}
                 extra={ <img className='crypto-image' src={currency.iconUrl} alt='crypto-img' /> }
                 hoverable

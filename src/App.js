@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { Layout, Typography, Space } from 'antd'
+import { Layout } from 'antd'
 import { Navbar } from './components'
 import Routing from './Routing'
 import './App.css'
@@ -17,16 +16,6 @@ export default function App() {
             <Routing />
           </div>
         </Layout>
-      </div>
-      <div className='footer'>
-        <Typography.Title level={5} style={{color: 'white', textAlign: 'center'}}>
-          Cryptofolio<br />
-        </Typography.Title>
-        <Space>
-          <Link to='/'>Home</Link>
-          <Link to='exchanges'>exchanges</Link>
-          <Link to='News'>News</Link>
-        </Space>
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import { Homepage, Exchanges, News, CryptoDetails, Cryptocurrencies  } from './components'
+import { Homepage, Exchanges, News, CryptoDetails, Cryptocurrencies, Profile } from './components'
 
 export default function Routing() {
   return (
@@ -19,6 +19,9 @@ export default function Routing() {
       </Route>
       <Route exact path='/news'>
         <News />
+      </Route>
+      <Route exact path='/profile'>
+        <Profile />
       </Route>
     </Switch>
   )

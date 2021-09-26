@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Button, Menu, Typography, Avatar } from 'antd'
 import { Link } from 'react-router-dom'
-import { BulbOutlined, FundOutlined, HomeOutlined, MenuOutlined, MoneyCollectOutlined  } from '@ant-design/icons'
+import { BulbOutlined, FundOutlined, HomeOutlined, MenuOutlined, MoneyCollectOutlined, UserOutlined  } from '@ant-design/icons'
 import icon from '../images/cryptocurrency.png'
 
 export default function Navbar() {
 
+  const { Title } = Typography
   const [activeMenu, setActiveMenu] = useState(true)
   const [screenSize, setScreenSize] = useState(null)
 
@@ -28,9 +29,9 @@ export default function Navbar() {
     <div className='nav-container'>
       <div className='logo-container'>
         <Avatar src={icon} size='large' />
-        <Typography.Title level={2} className="logo">
+        <Title level={2} className="logo">
           <Link to='/'>Cryptofolio</Link>
-        </Typography.Title>
+        </Title>
         <Button className="menu-control-container" onClick={() => setActiveMenu(!activeMenu)}>
           <MenuOutlined />
         </Button>
@@ -38,7 +39,7 @@ export default function Navbar() {
       {!activeMenu && (
         <Menu theme="dark">
           <Menu.Item key={1} icon={<HomeOutlined />}>
-            <Link to='/'>Home</Link>
+            <Link to='/'> Home </Link>
           </Menu.Item>
           <Menu.Item key={2} icon={<FundOutlined />}>
             <Link to='/cryptocurrencies'>Cryptocurrencies</Link>
@@ -49,8 +50,17 @@ export default function Navbar() {
           <Menu.Item key={4} icon={<BulbOutlined />}>
             <Link to='/news'>News</Link>
           </Menu.Item>
+          <Menu.Item key={5} icon={<UserOutlined />}>
+            <Link to='/profile'>Profile</Link>
+          </Menu.Item>
         </Menu>
       )}
+      <div className='footer'>
+        <Title level={5} style={{color: 'white', textAlign: 'center'}}>
+          Cryptofolio<br />
+          All rights reserved
+        </Title>
+      </div>
     </div>
   )
 }
