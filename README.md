@@ -13,6 +13,6 @@ This project is one of my school project (Epitech 2020) where I used
 
 
 Setup
-- run ```npm i && npm start ``` for both client and server side to start the developement server 
+- run ```npm i && npm start ```
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
