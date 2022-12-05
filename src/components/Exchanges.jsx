@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col, Collapse, Typography, Avatar } from 'antd'
 import HTMLReactParser from 'html-react-parser';
 import millify from 'millify'
-import { useGetExchangesQuery } from '../services/cryptoApi'
+import { useGetExchangesQuery } from '../services/cryptoAPI'
 import Loading from './Loading'
 export default function Exchanges() {
 

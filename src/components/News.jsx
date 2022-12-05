@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import moment from 'moment'
 import { Col, Row, Select, Typography, Avatar, Card } from 'antd'
 import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi'
-import { useGetCryptosQuery } from '../services/cryptoApi';
+import { useGetCryptosQuery } from '../services/cryptoAPI';
 import Loading from './Loading';
 
 const demoImage = 'https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News';
